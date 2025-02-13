@@ -2,42 +2,116 @@
 <html lang="en">
   <head>
     <title>Wizard world</title>
+    <style>
+      body {
+        /* background-image: url(./assets/midnight\ sky.jpeg); */
+        color: white;
+        color: black;
+        font-family: cursive;
+        font-weight: 600;
+        font-size: large;
+      }
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        color: black;
+        text-decoration-line: underline;
+        text-decoration-style: double;
+      }
+      h2 {
+        color: rgb(104, 7, 241);
+        font-weight: bolder;
+        font-size: 30px;
+      }
+    </style>
   </head>
 
-  <body
-    background="./assets/midnight sky.jpeg"
-    style="
-      background-color: black;
-      color: white;
-      font-family: cursive;
-      font-weight: 600;
-      font-size: large;
-    "
-  >
+  <body>
     <header>
-      <h1
-        style="
-          text-align: center;
-          font-size: 50px;
-          color: white;
-          text-decoration-line: underline;
-          text-decoration-style: double;
-        "
-      >
-        Welcome to Hogwarts
+      <h1>
+        Hogwarts
         <sub><em>The School of Witchcraft and Wizardry</em></sub>
+        <figure>
+          <img
+            src="./assets/hogwarts2.webp"
+            alt="Hogwarts"
+            width="1500px"
+            height="700px"
+            style="border: 4px solid black"
+          />
+        </figure>
       </h1>
     </header>
+
+    <div>
+      <p style="font-size: 40px">Welcome to Hogwarts!!</p>
+      <p style="font-size: 20px">
+        The school is divided into four houses: Gryffindor, Hufflepuff,
+        Ravenclaw, and Slytherin. Founders: Godric Gryffindor founded
+        Gryffindor, Helga Hufflepuff founded Hufflepuff, Rowena Ravenclaw
+        founded Ravenclaw, and Salazar Slytherin founded Slytherin.Each house
+        has its own noble history and each has produced outstanding witches and
+        wizards.
+      </p>
+      <ul>
+        Features:
+        <li>The castle is filled with secret passages and rooms</li>
+        <li>The castle has 142 staircases</li>
+        <li>
+          The castle is protected by spells and enchantments to keep Muggles out
+        </li>
+        <li>The castle appears as an abandoned castle to Muggles</li>
+        <li>
+          The castle is home to many ghosts, including Peeves the poltergeist
+        </li>
+      </ul>
+      <div>
+        <p>Information to young wizards and witches</p>
+        <ul>
+          <li>
+            <img
+              src="./assets/sorting_hat.jpeg"
+              alt="Sorting hat"
+              style="display: block"
+            />
+            The sorting hat will decide to which you belong.
+          </li>
+          <li>
+            <img
+              src="./assets/quidditchField.jpg"
+              alt="Quidditch field"
+              style="display: block"
+            />
+            Every year Quidditch will happen. Students from 3rd year are
+            eligible to participate.
+          </li>
+          <li>
+            <img
+              src="./assets/forbiddenForest1.png"
+              alt="forbidden Forest"
+              style="display: block"
+            />
+            **Students are strictly prohibited from entering the forbidden
+            forest.**
+          </li>
+          <li>
+            <img src="./assets/magic.png" alt="Magic" style="display: block" />
+            Any use of magic outside hogwarts is not allowed unless it is
+            necessary.
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <nav>
-      <h2 style="color: goldenrod; font-weight: bolder; font-size: 30px">
-        The houses:
-      </h2>
+      <h2>The Founders:</h2>
       <ul>
         <li>
           <a
             href="gryffindor.html"
             target="_blank"
-            style="color: #f21316; font-weight: bold"
+            style="color: #f21316; font-weight: bolder"
             >Gryffindor</a
           >
         </li>
@@ -45,24 +119,24 @@
           <a
             href="ravenclaw.html"
             target="_blank"
-            style="color: rgb(227, 223, 223); font-weight: bolder"
+            style="color: rgb(6, 38, 245); font-weight: bolder"
             >Ravenclaw</a
-          >
-        </li>
-        <li>
-          <a
-            href="slytherin.html"
-            target="_blank"
-            style="color: rgb(4, 157, 4); font-weight: bold"
-            >Slytherin</a
           >
         </li>
         <li>
           <a
             href="hufflepuff.html"
             target="_blank"
-            style="color: yellow; font-weight: bolder"
+            style="color: darkorange; font-weight: bolder"
             >Hufflepuff</a
+          >
+        </li>
+        <li>
+          <a
+            href="slytherin.html"
+            target="_blank"
+            style="color: rgb(4, 157, 4); font-weight: bolder"
+            >Slytherin</a
           >
         </li>
       </ul>
@@ -70,7 +144,7 @@
     <section>
       <h2>Teachers:</h2>
       <table border="black" style="text-align: center">
-        <tr style="background-color: black">
+        <tr>
           <th>Name</th>
           <th>Specificity</th>
         </tr>
@@ -130,7 +204,7 @@
     <section>
       <h2>Students:</h2>
       <table border="black" style="text-align: center">
-        <tr style="background-color: black">
+        <tr>
           <th>Gryffindor</th>
           <th>Slytherin</th>
           <th>Ravenclaw</th>
@@ -138,9 +212,7 @@
         </tr>
         <tr>
           <td>
-            <a href="harry.html" target="_blank" style="color: white"
-              >Harry Potter</a
-            >
+            <a href="harry.html" target="_blank">Harry Potter</a>
           </td>
           <td>Draco Malfoy</td>
           <td>Terry Boot</td>
@@ -148,9 +220,7 @@
         </tr>
         <tr>
           <td>
-            <a href="hermione.html" target="_blank" style="color: white"
-              >Hermoine Granger</a
-            >
+            <a href="hermione.html" target="_blank">Hermoine Granger</a>
           </td>
           <td>Crabbe</td>
           <td>-</td>
@@ -159,6 +229,8 @@
         <tr>
           <td>Ron Weasley</td>
           <td>Goyle</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
       </table>
     </section>
