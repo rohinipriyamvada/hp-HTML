@@ -5,62 +5,81 @@
     <style>
       * {
         padding: 0;
+        margin: 0;
         box-sizing: border-box;
         text-align: justify;
       }
       body {
-        /* color: white; */
-        background-color: #171a26;
+        background-color: #3f7588;
         color: black;
         color: white;
         font-family: cursive;
         font-weight: 600;
         font-size: 20px;
       }
-      h1 {
-        text-align: center;
+      header {
+        background: url("./assets/hogwarts2.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+        padding: 40px;
+      }
+      header > h1 {
+        margin-left: 70px;
         text-decoration-line: underline;
         text-decoration-style: double;
       }
+      #caption {
+        font-style: italic;
+        text-decoration: none;
+        font-size: 25px;
+        margin-top: 0px;
+      }
+      .intro {
+        float: right;
+        width: 500px;
+        margin-right: 20px;
+        margin-top: 130px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 3px solid white;
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 20px;
+      }
+      .intro > h2 {
+        margin-bottom: 10px;
+      }
+      .sections {
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        padding: 10px;
+      }
       .card {
-        margin: 100px;
-        /* background-color: #67a8b9; */
-        width: 300px;
-        height: 500px;
+        margin: 40px;
+        background-color: #283243;
+        width: 350px;
+        height: 420px;
+        float: left;
+      }
+      .cardImages {
+        height: 350px;
+        width: 350px;
+        padding: 10px;
+        display: inline;
+      }
+      .cardCaption {
+        text-align: center;
       }
     </style>
   </head>
 
   <body>
     <header>
-      <h1 style="margin-bottom: 2px">Hogwarts</h1>
-      <p
-        style="
-          font-style: italic;
-          text-decoration: none;
-          text-align: center;
-          font-size: 25px;
-          margin-top: 0px;
-        "
-      >
-        The School of Witchcraft and Wizardry
-      </p>
-      <img
-        src="./assets/hogwarts2.webp"
-        alt="Hogwarts"
-        width="1000px"
-        style="
-          border: 4px solid black;
-          margin: auto;
-          display: block;
-          border-radius: 16px;
-        "
-      />
-    </header>
-
-    <div>
-      <p style="font-size: 40px">Welcome to Hogwarts!</p>
-      <p style="font-size: 20px">
+      <h1>Hogwarts</h1>
+      <p id="caption">The School of Witchcraft and Wizardry</p>
+      <div class="intro">
+        <h2>Welcome to Hogwarts!</h2>
         Hogwarts School of Witchcraft and Wizardry is one of the most renowned
         magical institutions in the wizarding world. Established over a thousand
         years ago, Hogwarts has stood as a beacon of magical education, shaping
@@ -72,115 +91,73 @@
         Hufflepuff founded Hufflepuff, Rowena Ravenclaw founded Ravenclaw, and
         Salazar Slytherin founded Slytherin.Each house has its own noble history
         and each has produced outstanding witches and wizards.
-      </p>
-      <p>
-        Over the centuries, Hogwarts became the premier school for young witches
-        and wizards in Britain. The castle, hidden from Muggle eyes, is filled
-        with secret passages, moving staircases, and magical creatures. It has
-        been protected by numerous enchantments, ensuring the safety of its
-        students. The school’s curriculum includes a diverse range of magical
-        subjects such as Transfiguration, Potions, Charms, Defense Against the
-        Dark Arts, and Herbology.
-      </p>
-    </div>
-    <div>
-      <h2>Information to young wizards and witches:</h2>
-      <div>
-        <h3>Sorting Hat</h3>
-        <p style="float: left; width: 1000px">
-          Created by the four founders, the hat was enchanted to determine which
-          house best suits each student. When a new student arrives at Hogwarts,
-          the Sorting Hat is placed on their head, and after assessing their
-          personality, qualities, and potential, it assigns them to Gryffindor,
-          Hufflepuff, Ravenclaw, or Slytherin. The Sorting Hat is not just an
-          ordinary hat; it possesses intelligence and the ability to speak. It
-          even composes and sings a new song each year at the Sorting Ceremony,
-          offering insights into the history and values of each house. The hat
-          considers the student’s personal traits, but in some cases, it also
-          takes their preferences into account.
-          <br />
-        </p>
-        <img
-          src="./assets/sorting_hat-removebg-preview.png"
-          alt="Sorting hat"
-          style="display: block; padding: 10px"
-        />
       </div>
-      <div>
-        <h3>Quidditch</h3>
-        <p style="float: left; width: 1000px">
-          Quidditch is the most popular sport in the wizarding world and a
-          beloved tradition at Hogwarts. It is a fast-paced, high-flying game
-          played on broomsticks, combining elements of speed, strategy, and
-          teamwork. The game is played between two teams of seven players, each
-          aiming to score points while defending their own goalposts. The game
-          is played with four balls: the Quaffle, the Bludgers, and the Golden
-          Snitch. Chasers try to score goals with the Quaffle, Beaters use bats
-          to deflect the aggressive Bludgers, the Keeper guards the goalposts,
-          and the Seeker's task is to catch the Golden Snitch, which earns their
-          team 150 points and usually ends the game. The fast-moving Snitch
-          makes the Seeker’s role crucial, often determining the outcome of the
-          match.
-          <br />
-        </p>
-        <img
-          src="./assets/quidditchField.jpg"
-          alt="Quidditch field"
-          style="display: block; padding: 10px"
-        />
-      </div>
-      <h3>The Forbidden forest: A place of mystery and danger</h3>
-      <p style="float: left; width: 1000px">
-        **Students are strictly prohibited from entering the forbidden forest.**
-        <br />
-        The Forbidden Forest, located on the outskirts of Hogwarts, is a vast,
-        dark, and eerie woodland that is strictly off-limits to students unless
-        accompanied by a teacher. It is home to a variety of magical creatures,
-        some friendly and others highly dangerous. Among its inhabitants are
-        centaurs, giant spiders like Aragog and his colony, unicorns, thestrals,
-        and even werewolves. The forest is also rumored to be a hiding place for
-        dark magic and has witnessed many significant events in wizarding
-        history.
-        <br />
-      </p>
-
-      <img
-        src="./assets/forbiddenForest1.png"
-        alt="forbidden Forest"
-        style="display: block; padding: 10px"
-        width="450px"
-        height="400px"
-      />
-      <p style="float: left; width: 1000px">
-        Any use of magic outside hogwarts is not allowed unless it is necessary.
-        The International Statute of Secrecy, established in 1692, strictly
-        forbids the use of magic in the presence of Muggles to protect the
-        wizarding world from exposure. This rule ensures that magical society
-        remains hidden and prevents chaos or fear among non-magical people. The
-        Ministry of Magic enforces this law, and violations can result in
-        serious consequences, including warnings, fines, or even expulsion from
-        institution. Young witches and wizards under the age of 17 are
-        especially monitored through the Trace, a magical detection system that
-        alerts the Ministry if magic is performed outside of school. However,
-        exceptions exist, such as self-defense or emergencies. This law plays a
-        significant role in maintaining harmony between the magical and
-        non-magical worlds, ensuring that wizards live discreetly while
-        preserving their traditions and safety. The secrecy surrounding magic is
-        a fundamental aspect of wizarding life, shaping the interactions between
-        the two worlds throughout history.
-        <br />
-      </p>
-      <img
-        src="./assets/magic-removebg-preview.png"
-        alt="Magic"
-        style="display: block; padding: 10px"
-        height="300px"
-      />
-    </div>
-
+    </header>
     <section>
-      <h2>Teachers:</h2>
-      <div class="card"></div>
+      <h2 class="sections">The founders:</h2>
+      <div class="card">
+        <figure>
+          <a href="gryffindor.html" target="_blank">
+            <img
+              class="cardImages"
+              src="./assets/gryffindor.webp"
+              alt="Godric Gryffindor"
+            />
+          </a>
+          <figcaption class="cardCaption">Godric Gryffindor</figcaption>
+        </figure>
+      </div>
+      <div class="card">
+        <figure>
+          <a href="ravenclaw.html" target="_blank">
+            <img
+              class="cardImages"
+              src="./assets/ravenclaw.webp"
+              alt="Rowena Ravenclaw"
+            />
+          </a>
+          <figcaption class="cardCaption">Rowena Ravenclaw</figcaption>
+        </figure>
+      </div>
+      <div class="card">
+        <figure>
+          <a href="hufflepuff.html" target="_blank">
+            <img
+              class="cardImages"
+              src="./assets/hufflepuff.webp"
+              alt="Helga Hufflepuff"
+            />
+          </a>
+          <figcaption class="cardCaption">Helga Hufflepuff</figcaption>
+        </figure>
+      </div>
+      <div class="card">
+        <figure>
+          <a href="slytherin.html" target="_blank">
+            <img
+              class="cardImages"
+              src="./assets/slytherin.webp"
+              alt="Salazar Slytherin"
+            />
+          </a>
+          <figcaption class="cardCaption">Salazar Slytherin</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section>
+      <h2 class="sections">Teachers:</h2>
+      <div class="card">
+        <figure>
+          <a href="slytherin.html" target="_blank">
+            <img
+              class="cardImages"
+              src="./assets/slytherin.webp"
+              alt="Salazar Slytherin"
+            />
+          </a>
+          <figcaption class="cardCaption">Salazar Slytherin</figcaption>
+        </figure>
+      </div>
     </section>
   </body>
 </html>
